@@ -24,3 +24,43 @@ function testSumIntegers1()
     echo  "Le test n'est pas réussie";
     }
 }
+function testSumIntegers2()
+{
+    if (!sumIntegers(2.2)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+function testSumIntegers3()
+{
+    if (!sumIntegers(-1)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+function testSumIntegers4()
+{
+    if (!sumIntegers(3)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+function testSumIntegers5()
+{
+    if (!sumIntegers(5)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+function testSumIntegers6()
+{
+    if (!sumIntegers(9)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
