@@ -13,12 +13,29 @@ CN8: mention(19) => "Excellent"
 
 function mention($note)
 {
-
+    if ($note<0 || $note>20) {
+        return false;
+    }
+    if($note>=0 && $note<=11) {
+        return "Pas de mention";
+    }
+    if ($note>=12 && $note<14) {
+        return "AB";
+    }
+    if ($note>=14 && $note<16) {
+        return "Bien";
+    }
+    if ($note>=16 && $note<18) {
+        return "TB";
+    }
+    if ($note>=18) {
+        return "Excellent";
+    }
 }
 
 function testMention21()
 {
-    if (mention(21) == false) {
+    if (!mention(21)) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -26,7 +43,7 @@ function testMention21()
 }
 function testMention_1()
 {
-    if (mention(-1) == false) {
+    if (!mention(-1)) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
