@@ -14,3 +14,5 @@ function mean($nbr1, $nbr2)
 
 echo "CN1: mean(4, 1.6) => '2.8'".PHP_EOL;
 var_dump(mean(4, 1.6));
+echo "CN1: mean(8, 5) => '6.5'".PHP_EOL;
+var_dump(mean(8, 5));
