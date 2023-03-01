@@ -9,7 +9,7 @@ CN4: mean(1.1, 19) => "10.05"
 
 function mean($nbr1, $nbr2)
 {
-    return false;
+    return ($nbr1 + $nbr2) / 2;
 }
 
 echo "CN1: mean(4, 1.6) => '2.8'".PHP_EOL;
