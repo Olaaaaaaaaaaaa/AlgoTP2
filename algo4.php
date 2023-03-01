@@ -13,11 +13,26 @@ CN6: sumIntegers(9) => "45"
 
 function sumIntegers($nombre)
 {
-    
+    $compteur = 0;
+    $total = 0;
+
+    if (is_int($nombre) == false || $nombre<=0) {
+        return false;
+    }
+
+    while ($nombre != $compteur) {
+        $compteur++;
+        $total = $total + $compteur;
+    }
+
+    return $total;
+
 }
+
 
 function testSumIntegers1()
 {
+    
     if (!sumIntegers(0)) {
         echo "Le test est réussie";
     } else {
