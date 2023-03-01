@@ -64,3 +64,16 @@ function testSumIntegers6()
     echo  "Le test n'est pas réussie";
     }
 }
+
+echo PHP_EOL."Test 1: ".PHP_EOL;
+testSumIntegers1();
+echo PHP_EOL."Test 2: ".PHP_EOL;
+testSumIntegers2();
+echo PHP_EOL."Test 3: ".PHP_EOL;
+testSumIntegers3();
+echo PHP_EOL."Test 4: ".PHP_EOL;
+testSumIntegers4();
+echo PHP_EOL."Test 5: ".PHP_EOL;
+testSumIntegers5();
+echo PHP_EOL."Test 6: ".PHP_EOL;
+testSumIntegers6();
