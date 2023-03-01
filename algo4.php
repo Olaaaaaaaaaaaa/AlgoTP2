@@ -42,7 +42,7 @@ function testSumIntegers3()
 }
 function testSumIntegers4()
 {
-    if (!sumIntegers(3)) {
+    if (sumIntegers(3) == 6) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -50,7 +50,7 @@ function testSumIntegers4()
 }
 function testSumIntegers5()
 {
-    if (!sumIntegers(5)) {
+    if (sumIntegers(5) == 15) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -58,7 +58,7 @@ function testSumIntegers5()
 }
 function testSumIntegers6()
 {
-    if (!sumIntegers(9)) {
+    if (sumIntegers(9) == 45) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
