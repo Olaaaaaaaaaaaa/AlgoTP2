@@ -18,15 +18,25 @@ function fibonacci($n)
         return false;
     }
 
-    $compteur = 0;
+    $compteur = 1;
     $total = 0;
-    
-    $f0 = 0;
-    $f1 = 1;
+    $fn0 = 0;
+    $fn1 = 1;
 
-    while() {
-        
+    if ($n == 0){
+        return $fn0;
     }
+    if ($n == 1){
+        return $fn1;
+    }
+
+    while ($compteur != $n){
+        $compteur++;
+        $total= $fn0 + $fn1;
+        $fn0 = $fn1;
+        $fn1 = $total;
+    }
+    return $total;
    
 }
 
