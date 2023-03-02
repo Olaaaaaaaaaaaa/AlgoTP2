@@ -14,21 +14,22 @@ CN8: fibonacci8(15) => "610"
 
 function fibonacci($n)
 {
+    if (is_int($n) == false || $n<0) {
+        return false;
+    }
+
     $compteur = 0;
     $total = 0;
     
     $f0 = 0;
     $f1 = 1;
 
-    if (is_int)
-    while () {
-        $compteur++
-    }
+   
 }
 
 function fibonacci1()
 {
-    if (!getCost(-1)) {
+    if (!fibonacci(-1)) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -36,7 +37,7 @@ function fibonacci1()
 }
 function fibonacci2()
 {
-    if (!getCost(2.2)) {
+    if (!fibonacci(2.2)) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -44,7 +45,7 @@ function fibonacci2()
 }
 function fibonacci3()
 {
-    if (getCost(0) == 0) {
+    if (fibonacci(0) == 0) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -52,7 +53,7 @@ function fibonacci3()
 }
 function fibonacci4()
 {
-    if (getCost(1) == 1) {
+    if (fibonacci(1) == 1) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -60,7 +61,7 @@ function fibonacci4()
 }
 function fibonacci5()
 {
-    if (getCost(2) == 1) {
+    if (fibonacci(2) == 1) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -68,7 +69,7 @@ function fibonacci5()
 }
 function fibonacci6()
 {
-    if (getCost(5) == 5) {
+    if (fibonacci(5) == 5) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -76,7 +77,7 @@ function fibonacci6()
 }
 function fibonacci7()
 {
-    if (getCost(9) == 34) {
+    if (fibonacci(9) == 34) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -84,7 +85,7 @@ function fibonacci7()
 }
 function fibonacci8()
 {
-    if (getCost(15) == 610) {
+    if (fibonacci(15) == 610) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
