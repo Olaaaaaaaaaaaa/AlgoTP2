@@ -1,25 +1,26 @@
 <?php
 
 /*
-CN1: sumIntegers(-1) => "false"
-CN2: sumIntegers(2.2) => "false"
-CN3: sumIntegers(13) => "13"
-CN4: sumIntegers(125) => "124.5"
-CN5: sumIntegers(162) => "160.4"
-CN6: sumIntegers(180) => "177.35"
-CN7: sumIntegers(300) => "280.25"
-CN8: sumIntegers(600) => "480"
+CN1: getCost(-1) => "false"
+CN2: getCost(2.2) => "false"
+CN3: getCost(13) => "13"
+CN4: getCost(125) => "124.5"
+CN5: getCost(162) => "160.4"
+CN6: getCost(180) => "177.25"
+CN7: getCost(300) => "280.25"
+CN8: getCost(600) => "480"
 */
 
 function getCost($volume)
 {
     $prix = 0;
-
+    if (is_int($volume) == false || $volume<=0) {
+        return false;
+    }
     if ($volume <=100) {
         $prix = $volume*1;
         return $prix;
     }
-
     if ($volume <=150) {
         $prix = (1*100) + (0.98*($volume-100));
         return $prix;
@@ -32,11 +33,17 @@ function getCost($volume)
         $prix = (1*100) + (0.98*50) + (0.95*25) + (0.90*($volume-175));
         return $prix;
     }
+    if ($volume >200 && $volume<500) {
+        $prix = (1*100) + (0.98*50) + (0.95*25) + (0.90*25) + (0.85*($volume-200));
+        return $prix;
+    }
     if ($volume >=500) {
-
+        $prix = $volume*0.80;
+        return $prix;
     }
 }
 
+var_dump(getCost(300));
 
 function testGetCost1()
 {
@@ -64,7 +71,7 @@ function testGetCost3()
 }
 function testGetCost4()
 {
-    if (getCost(125)) {
+    if (getCost(125) == 124.5) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -72,7 +79,7 @@ function testGetCost4()
 }
 function testGetCost5()
 {
-    if (getCost(162)) {
+    if (getCost(162) == 160.4) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -80,7 +87,7 @@ function testGetCost5()
 }
 function testGetCost6()
 {
-    if (getCost(180)) {
+    if (getCost(180) == 177.25) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -88,7 +95,7 @@ function testGetCost6()
 }
 function testGetCost7()
 {
-    if (getCost(300)) {
+    if (getCost(300) == 280.25) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
@@ -96,7 +103,7 @@ function testGetCost7()
 }
 function testGetCost8()
 {
-    if (getCost(600)) {
+    if (getCost(600) == 480) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
