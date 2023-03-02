@@ -81,3 +81,20 @@ function fibonacci8()
     echo  "Le test n'est pas réussie";
     }
 }
+
+echo PHP_EOL."Test 1: ".PHP_EOL;
+fibonacci1();
+echo PHP_EOL."Test 2: ".PHP_EOL;
+fibonacci2();
+echo PHP_EOL."Test 3: ".PHP_EOL;
+fibonacci3();
+echo PHP_EOL."Test 4: ".PHP_EOL;
+fibonacci4();
+echo PHP_EOL."Test 5: ".PHP_EOL;
+fibonacci5();
+echo PHP_EOL."Test 6: ".PHP_EOL;
+fibonacci6();
+echo PHP_EOL."Test 7: ".PHP_EOL;
+fibonacci7();
+echo PHP_EOL."Test 8: ".PHP_EOL;
+fibonacci8();
