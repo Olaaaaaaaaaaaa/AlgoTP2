@@ -1,16 +1,15 @@
 <?php
 
-
-
-
-
-
-
-
-
-
-
-
+/*
+CN1: sumIntegers(-1) => "false"
+CN2: sumIntegers(2.2) => "false"
+CN3: sumIntegers(13) => "13"
+CN4: sumIntegers(125) => "124.5"
+CN5: sumIntegers(162) => "160.4"
+CN6: sumIntegers(180) => "177.35"
+CN7: sumIntegers(300) => "280.25"
+CN8: sumIntegers(600) => "480"
+*/
 
 function getCost($volume)
 {
@@ -38,4 +37,85 @@ function getCost($volume)
     }
 }
 
-var_dump(getCost(125));
+
+function testGetCost1()
+{
+    if (!getCost(-1)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+function testGetCost2()
+{
+    if (!getCost(2.2)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+function testGetCost3()
+{
+    if (getCost(13) == 13) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+function testGetCost4()
+{
+    if (getCost(125)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+function testGetCost5()
+{
+    if (getCost(162)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+function testGetCost6()
+{
+    if (getCost(180)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+function testGetCost7()
+{
+    if (getCost(300)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+function testGetCost8()
+{
+    if (getCost(600)) {
+        echo "Le test est réussie";
+    } else {
+    echo  "Le test n'est pas réussie";
+    }
+}
+
+echo PHP_EOL."Test 1: ".PHP_EOL;
+testGetCost1();
+echo PHP_EOL."Test 2: ".PHP_EOL;
+testGetCost2();
+echo PHP_EOL."Test 3: ".PHP_EOL;
+testGetCost3();
+echo PHP_EOL."Test 4: ".PHP_EOL;
+testGetCost4();
+echo PHP_EOL."Test 5: ".PHP_EOL;
+testGetCost5();
+echo PHP_EOL."Test 6: ".PHP_EOL;
+testGetCost6();
+echo PHP_EOL."Test 7: ".PHP_EOL;
+testGetCost7();
+echo PHP_EOL."Test 8: ".PHP_EOL;
+testGetCost8();
