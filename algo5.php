@@ -14,7 +14,16 @@ CN8: fibonacci8(15) => "610"
 
 function fibonacci($n)
 {
+    $compteur = 0;
+    $total = 0;
+    
+    $f0 = 0;
+    $f1 = 1;
 
+    if (is_int)
+    while () {
+        $compteur++
+    }
 }
 
 function fibonacci1()
