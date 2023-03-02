@@ -24,6 +24,9 @@ function fibonacci($n)
     $f0 = 0;
     $f1 = 1;
 
+    while() {
+        
+    }
    
 }
 
